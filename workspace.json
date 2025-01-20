@@ -4,7 +4,7 @@
   "documentation" : { },
   "id" : 1,
   "lastModifiedAgent" : "structurizr-ui",
-  "lastModifiedDate" : "2025-01-20T07:07:53Z",
+  "lastModifiedDate" : "2025-01-20T07:56:46Z",
   "model" : {
     "people" : [ {
       "description" : "A super admin of the app, with personal app account",
@@ -1050,7 +1050,7 @@
   "views" : {
     "configuration" : {
       "branding" : { },
-      "lastSavedView" : "Dynamic-002",
+      "lastSavedView" : "Dynamic-001",
       "metadataSymbols" : "SquareBrackets",
       "styles" : {
         "elements" : [ {
@@ -1239,7 +1239,7 @@
       "title" : "Web Login"
     }, {
       "automaticLayout" : {
-        "applied" : true,
+        "applied" : false,
         "edgeSeparation" : 0,
         "implementation" : "Graphviz",
         "nodeSeparation" : 300,
@@ -1247,63 +1247,59 @@
         "rankSeparation" : 300,
         "vertices" : false
       },
-      "dimensions" : {
-        "height" : 3152,
-        "width" : 4570
-      },
       "elementId" : "6",
       "elements" : [ {
         "id" : "3",
-        "x" : 200,
-        "y" : 385
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "4",
-        "x" : 200,
-        "y" : 1085
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "7",
-        "x" : 1650,
-        "y" : 185
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "16",
-        "x" : 2400,
-        "y" : 726
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "17",
-        "x" : 1650,
-        "y" : 785
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "18",
-        "x" : 900,
-        "y" : 785
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "23",
-        "x" : 2400,
-        "y" : 1326
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "38",
-        "x" : 3150,
-        "y" : 1926
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "42",
-        "x" : 3150,
-        "y" : 2526
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "43",
-        "x" : 2400,
-        "y" : 1926
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "44",
-        "x" : 3150,
-        "y" : 1326
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "46",
-        "x" : 3900,
-        "y" : 1926
+        "x" : 0,
+        "y" : 0
       }, {
         "id" : "51",
-        "x" : 3900,
-        "y" : 1326
+        "x" : 0,
+        "y" : 0
       } ],
       "externalBoundariesVisible" : false,
       "generatedKey" : true,
@@ -1348,20 +1344,12 @@
         "description" : "Verifies OTP number",
         "id" : "85",
         "order" : "8",
-        "response" : false,
-        "vertices" : [ {
-          "x" : 2296,
-          "y" : 1776
-        } ]
+        "response" : false
       }, {
         "description" : "Sends register data",
         "id" : "87",
         "order" : "9",
-        "response" : false,
-        "vertices" : [ {
-          "x" : 2296,
-          "y" : 1264
-        } ]
+        "response" : false
       }, {
         "description" : "Sends register data",
         "id" : "89",
@@ -1486,7 +1474,7 @@
       "title" : "Mobile Edit Profile"
     }, {
       "automaticLayout" : {
-        "applied" : false,
+        "applied" : true,
         "edgeSeparation" : 0,
         "implementation" : "Graphviz",
         "nodeSeparation" : 300,
@@ -1494,31 +1482,35 @@
         "rankSeparation" : 300,
         "vertices" : false
       },
+      "dimensions" : {
+        "height" : 2091,
+        "width" : 3140
+      },
       "elementId" : "6",
       "elements" : [ {
         "id" : "3",
-        "x" : 0,
-        "y" : 0
+        "x" : 245,
+        "y" : 165
       }, {
         "id" : "8",
-        "x" : 0,
-        "y" : 0
+        "x" : 970,
+        "y" : 865
       }, {
         "id" : "12",
-        "x" : 0,
-        "y" : 0
+        "x" : 220,
+        "y" : 865
       }, {
         "id" : "28",
-        "x" : 0,
-        "y" : 0
+        "x" : 970,
+        "y" : 1465
       }, {
         "id" : "41",
-        "x" : 0,
-        "y" : 0
+        "x" : 1720,
+        "y" : 1465
       }, {
         "id" : "48",
-        "x" : 0,
-        "y" : 0
+        "x" : 2470,
+        "y" : 1465
       } ],
       "externalBoundariesVisible" : false,
       "generatedKey" : true,
@@ -1533,12 +1525,20 @@
         "description" : "Clicks notification menu",
         "id" : "110",
         "order" : "2",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 820,
+          "y" : 865
+        } ]
       }, {
         "description" : "Clicks back button",
         "id" : "111",
         "order" : "3",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 820,
+          "y" : 1165
+        } ]
       }, {
         "description" : "Get notification",
         "id" : "112",
@@ -1558,7 +1558,7 @@
       "title" : "Mobile Notification"
     }, {
       "automaticLayout" : {
-        "applied" : false,
+        "applied" : true,
         "edgeSeparation" : 0,
         "implementation" : "Graphviz",
         "nodeSeparation" : 300,
@@ -1566,71 +1566,75 @@
         "rankSeparation" : 300,
         "vertices" : false
       },
+      "dimensions" : {
+        "height" : 3216,
+        "width" : 6140
+      },
       "elementId" : "6",
       "elements" : [ {
         "id" : "3",
-        "x" : 0,
-        "y" : 0
+        "x" : 1745,
+        "y" : 165
       }, {
         "id" : "8",
-        "x" : 0,
-        "y" : 0
+        "x" : 2470,
+        "y" : 1174
       }, {
         "id" : "9",
-        "x" : 0,
-        "y" : 0
+        "x" : 3220,
+        "y" : 1174
       }, {
         "id" : "13",
-        "x" : 0,
-        "y" : 0
+        "x" : 220,
+        "y" : 1174
       }, {
         "id" : "14",
-        "x" : 0,
-        "y" : 0
+        "x" : 970,
+        "y" : 1174
       }, {
         "id" : "15",
-        "x" : 0,
-        "y" : 0
+        "x" : 1720,
+        "y" : 1174
       }, {
         "id" : "30",
-        "x" : 0,
-        "y" : 0
+        "x" : 3970,
+        "y" : 1319
       }, {
         "id" : "31",
-        "x" : 0,
-        "y" : 0
+        "x" : 4720,
+        "y" : 1390
       }, {
         "id" : "32",
-        "x" : 0,
-        "y" : 0
+        "x" : 4720,
+        "y" : 790
       }, {
         "id" : "33",
-        "x" : 0,
-        "y" : 0
+        "x" : 3970,
+        "y" : 2590
       }, {
         "id" : "34",
-        "x" : 0,
-        "y" : 0
+        "x" : 4720,
+        "y" : 2590
       }, {
         "id" : "35",
-        "x" : 0,
-        "y" : 0
+        "x" : 3970,
+        "y" : 1919
       }, {
         "id" : "36",
-        "x" : 0,
-        "y" : 0
+        "x" : 4720,
+        "y" : 1990
       }, {
         "id" : "49",
-        "x" : 0,
-        "y" : 0
+        "x" : 5470,
+        "y" : 1090
       }, {
         "id" : "50",
-        "x" : 0,
-        "y" : 0
+        "x" : 5470,
+        "y" : 1690
       }, {
         "id" : "52",
-        "x" : 0,
-        "y" : 0
+        "x" : 5470,
+        "y" : 2290
       } ],
       "externalBoundariesVisible" : false,
       "generatedKey" : true,
@@ -1665,12 +1669,26 @@
         "description" : "Clicks an item of doctor list",
         "id" : "127",
         "order" : "6",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2920,
+          "y" : 1024
+        }, {
+          "x" : 970,
+          "y" : 1024
+        } ]
       }, {
         "description" : "Get doctor data",
         "id" : "128",
         "order" : "7",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1941,
+          "y" : 2536
+        }, {
+          "x" : 2699,
+          "y" : 2536
+        } ]
       }, {
         "description" : "Using",
         "id" : "130",
@@ -1690,7 +1708,11 @@
         "description" : "Set reservation",
         "id" : "134",
         "order" : "11",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 1624
+        } ]
       }, {
         "description" : "Using",
         "id" : "137",
@@ -1700,7 +1722,14 @@
         "description" : "Set reservation",
         "id" : "138",
         "order" : "13",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 5274,
+          "y" : 2440
+        }, {
+          "x" : 5366,
+          "y" : 2140
+        } ]
       }, {
         "description" : "Clicks payment button",
         "id" : "141",
@@ -1710,7 +1739,11 @@
         "description" : "Set payment",
         "id" : "142",
         "order" : "15",
-        "response" : false
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 1624
+        } ]
       }, {
         "description" : "Using",
         "id" : "145",
