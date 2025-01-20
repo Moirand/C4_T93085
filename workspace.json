@@ -1,0 +1,1667 @@
+{
+  "configuration" : { },
+  "description" : "C4_T93085",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedAgent" : "structurizr-ui",
+  "lastModifiedDate" : "2025-01-20T02:10:37Z",
+  "model" : {
+    "people" : [ {
+      "description" : "A super admin of the app, with personal app account",
+      "id" : "1",
+      "location" : "Unspecified",
+      "name" : "Super Admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "super_admin"
+      },
+      "relationships" : [ {
+        "destinationId" : "17",
+        "id" : "43",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "16",
+        "id" : "44",
+        "linkedRelationshipId" : "43",
+        "sourceId" : "1"
+      }, {
+        "destinationId" : "5",
+        "id" : "45",
+        "linkedRelationshipId" : "43",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "An admin of the app, with personal app account",
+      "id" : "2",
+      "location" : "Unspecified",
+      "name" : "Admin",
+      "properties" : {
+        "structurizr.dsl.identifier" : "admin"
+      },
+      "relationships" : [ {
+        "destinationId" : "17",
+        "id" : "46",
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "16",
+        "id" : "47",
+        "linkedRelationshipId" : "46",
+        "sourceId" : "2"
+      }, {
+        "destinationId" : "5",
+        "id" : "48",
+        "linkedRelationshipId" : "46",
+        "sourceId" : "2"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "A customer of the app, with personal app account",
+      "id" : "3",
+      "location" : "Unspecified",
+      "name" : "User",
+      "properties" : {
+        "structurizr.dsl.identifier" : "user"
+      },
+      "relationships" : [ {
+        "destinationId" : "7",
+        "id" : "63",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "6",
+        "id" : "64",
+        "linkedRelationshipId" : "63",
+        "sourceId" : "3"
+      }, {
+        "destinationId" : "5",
+        "id" : "65",
+        "linkedRelationshipId" : "63",
+        "sourceId" : "3"
+      }, {
+        "destinationId" : "8",
+        "id" : "79",
+        "sourceId" : "3",
+        "tags" : "Relationship"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "A doctor who serves the customer of the app, with personal app account",
+      "id" : "4",
+      "location" : "Unspecified",
+      "name" : "Doctor",
+      "properties" : {
+        "structurizr.dsl.identifier" : "doctor"
+      },
+      "relationships" : [ {
+        "destinationId" : "7",
+        "id" : "66",
+        "sourceId" : "4",
+        "tags" : "Relationship"
+      }, {
+        "destinationId" : "6",
+        "id" : "67",
+        "linkedRelationshipId" : "66",
+        "sourceId" : "4"
+      }, {
+        "destinationId" : "5",
+        "id" : "68",
+        "linkedRelationshipId" : "66",
+        "sourceId" : "4"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "components" : [ {
+          "description" : "Login page for the mobile app.",
+          "documentation" : { },
+          "id" : "7",
+          "name" : "Login Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobileloginpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "8",
+            "id" : "69",
+            "sourceId" : "7",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "20",
+            "id" : "70",
+            "sourceId" : "7",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "71",
+            "linkedRelationshipId" : "70",
+            "sourceId" : "7"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "description" : "Shows menu for consultating, laboratorium test, vaccine, medical acl, etc.",
+          "documentation" : { },
+          "id" : "8",
+          "name" : "Dashboard Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobiledashboardpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "10",
+            "id" : "80",
+            "sourceId" : "8",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "12",
+            "id" : "92",
+            "sourceId" : "8",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "9",
+            "id" : "101",
+            "sourceId" : "8",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "description" : "Shows doctor list.",
+          "documentation" : { },
+          "id" : "9",
+          "name" : "Doctor List Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobiledoctorlistpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "27",
+            "id" : "102",
+            "sourceId" : "9",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "103",
+            "linkedRelationshipId" : "102",
+            "sourceId" : "9"
+          }, {
+            "destinationId" : "13",
+            "id" : "109",
+            "sourceId" : "9",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "description" : "Shows user's profile.",
+          "documentation" : { },
+          "id" : "10",
+          "name" : "Profile Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobileprofilepage"
+          },
+          "relationships" : [ {
+            "destinationId" : "11",
+            "id" : "81",
+            "sourceId" : "10",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "23",
+            "id" : "82",
+            "sourceId" : "10",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "83",
+            "linkedRelationshipId" : "82",
+            "sourceId" : "10"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "documentation" : { },
+          "id" : "11",
+          "name" : "Edit Profile Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobileeditprofilepage"
+          },
+          "relationships" : [ {
+            "destinationId" : "10",
+            "id" : "89",
+            "sourceId" : "11",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "23",
+            "id" : "90",
+            "sourceId" : "11",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "91",
+            "linkedRelationshipId" : "90",
+            "sourceId" : "11"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "documentation" : { },
+          "id" : "12",
+          "name" : "Notification Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobilenotificationpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "8",
+            "id" : "93",
+            "sourceId" : "12",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "25",
+            "id" : "94",
+            "sourceId" : "12",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "95",
+            "linkedRelationshipId" : "94",
+            "sourceId" : "12"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "documentation" : { },
+          "id" : "13",
+          "name" : "Doctor Detail Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobiledoctordetailpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "27",
+            "id" : "110",
+            "sourceId" : "13",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "111",
+            "linkedRelationshipId" : "110",
+            "sourceId" : "13"
+          }, {
+            "destinationId" : "14",
+            "id" : "112",
+            "sourceId" : "13",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "documentation" : { },
+          "id" : "14",
+          "name" : "Reservation Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobilereservationpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "29",
+            "id" : "113",
+            "sourceId" : "14",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "114",
+            "linkedRelationshipId" : "113",
+            "sourceId" : "14"
+          }, {
+            "destinationId" : "15",
+            "id" : "120",
+            "sourceId" : "14",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        }, {
+          "documentation" : { },
+          "id" : "15",
+          "name" : "Payment Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mobilepaymentpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "31",
+            "id" : "121",
+            "sourceId" : "15",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "122",
+            "linkedRelationshipId" : "121",
+            "sourceId" : "15"
+          }, {
+            "destinationId" : "8",
+            "id" : "128",
+            "sourceId" : "15",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Dart & Flutter"
+        } ],
+        "description" : "The mobile app for the C4 t93085 project.",
+        "documentation" : { },
+        "id" : "6",
+        "name" : "Mobile App",
+        "properties" : {
+          "structurizr.dsl.identifier" : "mobile"
+        },
+        "relationships" : [ {
+          "destinationId" : "20",
+          "id" : "72",
+          "linkedRelationshipId" : "70",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "19",
+          "id" : "73",
+          "linkedRelationshipId" : "70",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "23",
+          "id" : "84",
+          "linkedRelationshipId" : "82",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "25",
+          "id" : "96",
+          "linkedRelationshipId" : "94",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "27",
+          "id" : "104",
+          "linkedRelationshipId" : "102",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "29",
+          "id" : "115",
+          "linkedRelationshipId" : "113",
+          "sourceId" : "6"
+        }, {
+          "destinationId" : "31",
+          "id" : "123",
+          "linkedRelationshipId" : "121",
+          "sourceId" : "6"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Flutter"
+      }, {
+        "components" : [ {
+          "description" : "Login page for the web app.",
+          "documentation" : { },
+          "id" : "17",
+          "name" : "Login Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "webloginpage"
+          },
+          "relationships" : [ {
+            "destinationId" : "18",
+            "id" : "49",
+            "sourceId" : "17",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "20",
+            "id" : "50",
+            "sourceId" : "17",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "19",
+            "id" : "51",
+            "linkedRelationshipId" : "50",
+            "sourceId" : "17"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Typescript, React"
+        }, {
+          "description" : "Shows menu of master data, data of doctor, etc.",
+          "documentation" : { },
+          "id" : "18",
+          "name" : "Dashboard Page",
+          "properties" : {
+            "structurizr.dsl.identifier" : "webdashboardpage"
+          },
+          "tags" : "Element,Component",
+          "technology" : "Typescript, React"
+        } ],
+        "description" : "The web app for the C4 t93085 project.",
+        "documentation" : { },
+        "id" : "16",
+        "name" : "Web App",
+        "properties" : {
+          "structurizr.dsl.identifier" : "web"
+        },
+        "relationships" : [ {
+          "destinationId" : "20",
+          "id" : "52",
+          "linkedRelationshipId" : "50",
+          "sourceId" : "16"
+        }, {
+          "destinationId" : "19",
+          "id" : "53",
+          "linkedRelationshipId" : "50",
+          "sourceId" : "16"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Typescript, React"
+      }, {
+        "components" : [ {
+          "description" : "Controller for authentication related operations.",
+          "documentation" : { },
+          "id" : "20",
+          "name" : "Authentication Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authenticationcontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "21",
+            "id" : "54",
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "22",
+            "id" : "55",
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "33",
+            "id" : "74",
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "34",
+            "id" : "75",
+            "sourceId" : "20",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality related to signing in, changing password, etc.",
+          "documentation" : { },
+          "id" : "21",
+          "name" : "Security Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "securitycomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "36",
+            "id" : "56",
+            "sourceId" : "21",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "57",
+            "linkedRelationshipId" : "56",
+            "sourceId" : "21"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Sends emails to users.",
+          "documentation" : { },
+          "id" : "22",
+          "name" : "Email Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "emailcomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "41",
+            "id" : "60",
+            "sourceId" : "22",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Allows users to manage their profile.",
+          "documentation" : { },
+          "id" : "23",
+          "name" : "User Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "usercontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "24",
+            "id" : "85",
+            "sourceId" : "23",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of user.",
+          "documentation" : { },
+          "id" : "24",
+          "name" : "User Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "usercomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "37",
+            "id" : "86",
+            "sourceId" : "24",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "87",
+            "linkedRelationshipId" : "86",
+            "sourceId" : "24"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of notification.",
+          "documentation" : { },
+          "id" : "25",
+          "name" : "Notification Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "notificationcontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "26",
+            "id" : "97",
+            "sourceId" : "25",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of notification.",
+          "documentation" : { },
+          "id" : "26",
+          "name" : "Notification Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "notificationcomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "38",
+            "id" : "98",
+            "sourceId" : "26",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "99",
+            "linkedRelationshipId" : "98",
+            "sourceId" : "26"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of doctor data.",
+          "documentation" : { },
+          "id" : "27",
+          "name" : "Doctor Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "doctorcontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "28",
+            "id" : "105",
+            "sourceId" : "27",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Component of Doctor.",
+          "documentation" : { },
+          "id" : "28",
+          "name" : "Doctor Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "doctorcomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "39",
+            "id" : "106",
+            "sourceId" : "28",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "107",
+            "linkedRelationshipId" : "106",
+            "sourceId" : "28"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of reservation.",
+          "documentation" : { },
+          "id" : "29",
+          "name" : "Reservation Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "reservationcontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "30",
+            "id" : "116",
+            "sourceId" : "29",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Component of reservation.",
+          "documentation" : { },
+          "id" : "30",
+          "name" : "Reservation Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "reservationcomponent"
+          },
+          "relationships" : [ {
+            "destinationId" : "40",
+            "id" : "117",
+            "sourceId" : "30",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "118",
+            "linkedRelationshipId" : "117",
+            "sourceId" : "30"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Provides functionality of payment.",
+          "documentation" : { },
+          "id" : "31",
+          "name" : "Payment Controller",
+          "properties" : {
+            "structurizr.dsl.identifier" : "paymentcontroller"
+          },
+          "relationships" : [ {
+            "destinationId" : "32",
+            "id" : "124",
+            "sourceId" : "31",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "A facade onto the mainframe banking system.",
+          "documentation" : { },
+          "id" : "32",
+          "name" : "Mainframe Banking Component",
+          "properties" : {
+            "structurizr.dsl.identifier" : "mainframebankingsystemfacade"
+          },
+          "relationships" : [ {
+            "destinationId" : "42",
+            "id" : "125",
+            "sourceId" : "32",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Handle /api/v1/validation-auth",
+          "documentation" : { },
+          "id" : "33",
+          "name" : "Validation Auth RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "validationauth"
+          },
+          "relationships" : [ {
+            "destinationId" : "36",
+            "id" : "76",
+            "sourceId" : "33",
+            "tags" : "Relationship"
+          }, {
+            "destinationId" : "35",
+            "id" : "77",
+            "linkedRelationshipId" : "76",
+            "sourceId" : "33"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        }, {
+          "description" : "Handle /api/v1/send-email",
+          "documentation" : { },
+          "id" : "34",
+          "name" : "Send Email RESTful endpoint",
+          "properties" : {
+            "structurizr.dsl.identifier" : "sendemail"
+          },
+          "relationships" : [ {
+            "destinationId" : "41",
+            "id" : "78",
+            "sourceId" : "34",
+            "tags" : "Relationship"
+          } ],
+          "tags" : "Element,Component",
+          "technology" : "Golang Raiden"
+        } ],
+        "description" : "Backend services for the application.",
+        "documentation" : { },
+        "id" : "19",
+        "name" : "Backend",
+        "properties" : {
+          "structurizr.dsl.identifier" : "backend"
+        },
+        "relationships" : [ {
+          "destinationId" : "36",
+          "id" : "58",
+          "linkedRelationshipId" : "56",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "35",
+          "id" : "59",
+          "linkedRelationshipId" : "56",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "41",
+          "id" : "61",
+          "linkedRelationshipId" : "60",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "37",
+          "id" : "88",
+          "linkedRelationshipId" : "86",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "38",
+          "id" : "100",
+          "linkedRelationshipId" : "98",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "39",
+          "id" : "108",
+          "linkedRelationshipId" : "106",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "40",
+          "id" : "119",
+          "linkedRelationshipId" : "117",
+          "sourceId" : "19"
+        }, {
+          "destinationId" : "42",
+          "id" : "126",
+          "linkedRelationshipId" : "125",
+          "sourceId" : "19"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Golang Raiden"
+      }, {
+        "components" : [ {
+          "description" : "Stores auth data.",
+          "documentation" : { },
+          "id" : "36",
+          "name" : "Auth Table",
+          "properties" : {
+            "structurizr.dsl.identifier" : "authenticationtable"
+          },
+          "tags" : "Element,Component",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores user data.",
+          "documentation" : { },
+          "id" : "37",
+          "name" : "User Table",
+          "properties" : {
+            "structurizr.dsl.identifier" : "usertable"
+          },
+          "tags" : "Element,Component",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores notification data.",
+          "documentation" : { },
+          "id" : "38",
+          "name" : "Notification Table",
+          "properties" : {
+            "structurizr.dsl.identifier" : "notificationtable"
+          },
+          "tags" : "Element,Component",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores doctor data.",
+          "documentation" : { },
+          "id" : "39",
+          "name" : "Doctor Table",
+          "properties" : {
+            "structurizr.dsl.identifier" : "doctortable"
+          },
+          "tags" : "Element,Component",
+          "technology" : "PostgreSQL"
+        }, {
+          "description" : "Stores reservation data.",
+          "documentation" : { },
+          "id" : "40",
+          "name" : "Reservation Table",
+          "properties" : {
+            "structurizr.dsl.identifier" : "reservationtable"
+          },
+          "tags" : "Element,Component",
+          "technology" : "PostgreSQL"
+        } ],
+        "description" : "Stores all data for the application.",
+        "documentation" : { },
+        "id" : "35",
+        "name" : "Database",
+        "properties" : {
+          "structurizr.dsl.identifier" : "database"
+        },
+        "tags" : "Element,Container",
+        "technology" : "PostgreSQL"
+      } ],
+      "description" : "Allows users to manage master data, make payments, consultations, etc.",
+      "documentation" : { },
+      "id" : "5",
+      "location" : "Unspecified",
+      "name" : "Medpoint System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "mainsystem"
+      },
+      "relationships" : [ {
+        "destinationId" : "41",
+        "id" : "62",
+        "linkedRelationshipId" : "60",
+        "sourceId" : "5"
+      }, {
+        "destinationId" : "42",
+        "id" : "127",
+        "linkedRelationshipId" : "125",
+        "sourceId" : "5"
+      } ],
+      "tags" : "Element,Software System"
+    }, {
+      "description" : "The internal Microsoft Exchange email system",
+      "documentation" : { },
+      "id" : "41",
+      "location" : "Unspecified",
+      "name" : "Email System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "emailsystem"
+      },
+      "tags" : "Element,Software System,External System"
+    }, {
+      "description" : "Stores all of the core banking information about customers, accounts, transactions, etc",
+      "documentation" : { },
+      "id" : "42",
+      "location" : "Unspecified",
+      "name" : "Mainframe Banking System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "mainframebankingsystem"
+      },
+      "tags" : "Element,Software System,External System"
+    } ]
+  },
+  "name" : "C4_T93085",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAgIG5hbWUgIkM0X1Q5MzA4NSIKICAgIGRlc2NyaXB0aW9uICJDNF9UOTMwODUiCgogICAgbW9kZWwgewogICAgICAgIC8vIFBlb3BsZSAoVXNlcnMpCiAgICAgICAgc3VwZXJfYWRtaW4gPSBwZXJzb24gIlN1cGVyIEFkbWluIiB7CiAgICAgICAgICAgIGRlc2NyaXB0aW9uICJBIHN1cGVyIGFkbWluIG9mIHRoZSBhcHAsIHdpdGggcGVyc29uYWwgYXBwIGFjY291bnQiCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGFkbWluID0gcGVyc29uICJBZG1pbiIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQW4gYWRtaW4gb2YgdGhlIGFwcCwgd2l0aCBwZXJzb25hbCBhcHAgYWNjb3VudCIKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgdXNlciA9IHBlcnNvbiAiVXNlciIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQSBjdXN0b21lciBvZiB0aGUgYXBwLCB3aXRoIHBlcnNvbmFsIGFwcCBhY2NvdW50IgogICAgICAgIH0KICAgICAgICAKICAgICAgICBkb2N0b3IgPSBwZXJzb24gIkRvY3RvciIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiQSBkb2N0b3Igd2hvIHNlcnZlcyB0aGUgY3VzdG9tZXIgb2YgdGhlIGFwcCwgd2l0aCBwZXJzb25hbCBhcHAgYWNjb3VudCIKICAgICAgICB9CgogICAgICAgIC8vIE1haW4gU3lzdGVtCiAgICAgICAgbWFpblN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJNZWRwb2ludCBTeXN0ZW0iIHsKICAgICAgICAgICAgZGVzY3JpcHRpb24gIkFsbG93cyB1c2VycyB0byBtYW5hZ2UgbWFzdGVyIGRhdGEsIG1ha2UgcGF5bWVudHMsIGNvbnN1bHRhdGlvbnMsIGV0Yy4iCiAgICAgICAgCiAgICAgICAgICAgIC8vIE1vYmlsZSBBcHBsaWNhdGlvbiBjb250YWluZXIKICAgICAgICAgICAgbW9iaWxlID0gY29udGFpbmVyICJNb2JpbGUgQXBwIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIG1vYmlsZSBhcHAgZm9yIHRoZSBDNCB0OTMwODUgcHJvamVjdC4iCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJGbHV0dGVyIgogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVMb2dpblBhZ2UgPSBjb21wb25lbnQgIkxvZ2luIFBhZ2UiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiTG9naW4gcGFnZSBmb3IgdGhlIG1vYmlsZSBhcHAuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkRhcnQgJiBGbHV0dGVyIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgICAgIG1vYmlsZURhc2hib2FyZFBhZ2UgPSBjb21wb25lbnQgIkRhc2hib2FyZCBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlNob3dzIG1lbnUgZm9yIGNvbnN1bHRhdGluZywgbGFib3JhdG9yaXVtIHRlc3QsIHZhY2NpbmUsIG1lZGljYWwgYWNsLCBldGMuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkRhcnQgJiBGbHV0dGVyIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgICAgIG1vYmlsZURvY3Rvckxpc3RQYWdlID0gY29tcG9uZW50ICJEb2N0b3IgTGlzdCBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlNob3dzIGRvY3RvciBsaXN0LiIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJEYXJ0ICYgRmx1dHRlciIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVQcm9maWxlUGFnZSA9IGNvbXBvbmVudCAiUHJvZmlsZSBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlNob3dzIHVzZXIncyBwcm9maWxlLiIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJEYXJ0ICYgRmx1dHRlciIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVFZGl0UHJvZmlsZVBhZ2UgPSBjb21wb25lbnQgIkVkaXQgUHJvZmlsZSBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiRGFydCAmIEZsdXR0ZXIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgbW9iaWxlTm90aWZpY2F0aW9uUGFnZSA9IGNvbXBvbmVudCAiTm90aWZpY2F0aW9uIFBhZ2UiIHsKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJEYXJ0ICYgRmx1dHRlciIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVEb2N0b3JEZXRhaWxQYWdlID0gY29tcG9uZW50ICJEb2N0b3IgRGV0YWlsIFBhZ2UiIHsKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJEYXJ0ICYgRmx1dHRlciIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVSZXNlcnZhdGlvblBhZ2UgPSBjb21wb25lbnQgIlJlc2VydmF0aW9uIFBhZ2UiIHsKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJEYXJ0ICYgRmx1dHRlciIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBtb2JpbGVQYXltZW50UGFnZSA9IGNvbXBvbmVudCAiUGF5bWVudCBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiRGFydCAmIEZsdXR0ZXIiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIC8vIFdlYiBBcHBsaWNhdGlvbiBjb250YWluZXIKICAgICAgICAgICAgd2ViID0gY29udGFpbmVyICJXZWIgQXBwIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIHdlYiBhcHAgZm9yIHRoZSBDNCB0OTMwODUgcHJvamVjdC4iCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJUeXBlc2NyaXB0LCBSZWFjdCIKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgd2ViTG9naW5QYWdlID0gY29tcG9uZW50ICJMb2dpbiBQYWdlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkxvZ2luIHBhZ2UgZm9yIHRoZSB3ZWIgYXBwLiIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJUeXBlc2NyaXB0LCBSZWFjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB3ZWJEYXNoYm9hcmRQYWdlID0gY29tcG9uZW50ICJEYXNoYm9hcmQgUGFnZSIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTaG93cyBtZW51IG9mIG1hc3RlciBkYXRhLCBkYXRhIG9mIGRvY3RvciwgZXRjLiIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJUeXBlc2NyaXB0LCBSZWFjdCIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgLy8gQmFja2VuZCBjb250YWluZXIKICAgICAgICAgICAgYmFja2VuZCA9IGNvbnRhaW5lciAiQmFja2VuZCIgewogICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkJhY2tlbmQgc2VydmljZXMgZm9yIHRoZSBhcHBsaWNhdGlvbi4iCiAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJHb2xhbmcgUmFpZGVuIgogICAgICAgICAgICAKICAgICAgICAgICAgICAgIGF1dGhlbnRpY2F0aW9uQ29udHJvbGxlciA9IGNvbXBvbmVudCAiQXV0aGVudGljYXRpb24gQ29udHJvbGxlciIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJDb250cm9sbGVyIGZvciBhdXRoZW50aWNhdGlvbiByZWxhdGVkIG9wZXJhdGlvbnMuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgc2VjdXJpdHlDb21wb25lbnQgPSBjb21wb25lbnQgIlNlY3VyaXR5IENvbXBvbmVudCIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJQcm92aWRlcyBmdW5jdGlvbmFsaXR5IHJlbGF0ZWQgdG8gc2lnbmluZyBpbiwgY2hhbmdpbmcgcGFzc3dvcmQsIGV0Yy4iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiR29sYW5nIFJhaWRlbiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBlbWFpbENvbXBvbmVudCA9IGNvbXBvbmVudCAiRW1haWwgQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlNlbmRzIGVtYWlscyB0byB1c2Vycy4iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiR29sYW5nIFJhaWRlbiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB1c2VyQ29udHJvbGxlciA9IGNvbXBvbmVudCAiVXNlciBDb250cm9sbGVyIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkFsbG93cyB1c2VycyB0byBtYW5hZ2UgdGhlaXIgcHJvZmlsZS4iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiR29sYW5nIFJhaWRlbiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB1c2VyQ29tcG9uZW50ID0gY29tcG9uZW50ICJVc2VyIENvbXBvbmVudCIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJQcm92aWRlcyBmdW5jdGlvbmFsaXR5IG9mIHVzZXIuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgbm90aWZpY2F0aW9uQ29udHJvbGxlciA9IGNvbXBvbmVudCAiTm90aWZpY2F0aW9uIENvbnRyb2xsZXIiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiUHJvdmlkZXMgZnVuY3Rpb25hbGl0eSBvZiBub3RpZmljYXRpb24uIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgbm90aWZpY2F0aW9uQ29tcG9uZW50ID0gY29tcG9uZW50ICJOb3RpZmljYXRpb24gQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlByb3ZpZGVzIGZ1bmN0aW9uYWxpdHkgb2Ygbm90aWZpY2F0aW9uLiIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJHb2xhbmcgUmFpZGVuIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgICAgIGRvY3RvckNvbnRyb2xsZXIgPSBjb21wb25lbnQgIkRvY3RvciBDb250cm9sbGVyIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlByb3ZpZGVzIGZ1bmN0aW9uYWxpdHkgb2YgZG9jdG9yIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgZG9jdG9yQ29tcG9uZW50ID0gY29tcG9uZW50ICJEb2N0b3IgQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkNvbXBvbmVudCBvZiBEb2N0b3IuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgcmVzZXJ2YXRpb25Db250cm9sbGVyID0gY29tcG9uZW50ICJSZXNlcnZhdGlvbiBDb250cm9sbGVyIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlByb3ZpZGVzIGZ1bmN0aW9uYWxpdHkgb2YgcmVzZXJ2YXRpb24uIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgcmVzZXJ2YXRpb25Db21wb25lbnQgPSBjb21wb25lbnQgIlJlc2VydmF0aW9uIENvbXBvbmVudCIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJDb21wb25lbnQgb2YgcmVzZXJ2YXRpb24uIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgcGF5bWVudENvbnRyb2xsZXIgPSBjb21wb25lbnQgIlBheW1lbnQgQ29udHJvbGxlciIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJQcm92aWRlcyBmdW5jdGlvbmFsaXR5IG9mIHBheW1lbnQuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgbWFpbmZyYW1lQmFua2luZ1N5c3RlbUZhY2FkZSA9IGNvbXBvbmVudCAiTWFpbmZyYW1lIEJhbmtpbmcgQ29tcG9uZW50IiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIkEgZmFjYWRlIG9udG8gdGhlIG1haW5mcmFtZSBiYW5raW5nIHN5c3RlbS4iCiAgICAgICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiR29sYW5nIFJhaWRlbiIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB2YWxpZGF0aW9uQXV0aCA9IGNvbXBvbmVudCAiVmFsaWRhdGlvbiBBdXRoIFJFU1RmdWwgZW5kcG9pbnQiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hcGkvdjEvdmFsaWRhdGlvbi1hdXRoIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIkdvbGFuZyBSYWlkZW4iCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgc2VuZEVtYWlsID0gY29tcG9uZW50ICJTZW5kIEVtYWlsIFJFU1RmdWwgZW5kcG9pbnQiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiSGFuZGxlIC9hcGkvdjEvc2VuZC1lbWFpbCIKICAgICAgICAgICAgICAgICAgICB0ZWNobm9sb2d5ICJHb2xhbmcgUmFpZGVuIgogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAvLyBEYXRhYmFzZSBjb250YWluZXIKICAgICAgICAgICAgZGF0YWJhc2UgPSBjb250YWluZXIgIkRhdGFiYXNlIiB7CiAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3RvcmVzIGFsbCBkYXRhIGZvciB0aGUgYXBwbGljYXRpb24uIgogICAgICAgICAgICAgICAgdGVjaG5vbG9neSAiUG9zdGdyZVNRTCIKICAgICAgICAgICAgCiAgICAgICAgICAgICAgICBhdXRoZW50aWNhdGlvblRhYmxlID0gY29tcG9uZW50ICJBdXRoIFRhYmxlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlN0b3JlcyBhdXRoIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgdXNlclRhYmxlID0gY29tcG9uZW50ICJVc2VyIFRhYmxlIiB7CiAgICAgICAgICAgICAgICAgICAgZGVzY3JpcHRpb24gIlN0b3JlcyB1c2VyIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgbm90aWZpY2F0aW9uVGFibGUgPSBjb21wb25lbnQgIk5vdGlmaWNhdGlvbiBUYWJsZSIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgbm90aWZpY2F0aW9uIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgZG9jdG9yVGFibGUgPSBjb21wb25lbnQgIkRvY3RvciBUYWJsZSIgewogICAgICAgICAgICAgICAgICAgIGRlc2NyaXB0aW9uICJTdG9yZXMgZG9jdG9yIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgICAgcmVzZXJ2YXRpb25UYWJsZSA9IGNvbXBvbmVudCAiUmVzZXJ2YXRpb24gVGFibGUiIHsKICAgICAgICAgICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3RvcmVzIHJlc2VydmF0aW9uIGRhdGEuIgogICAgICAgICAgICAgICAgICAgIHRlY2hub2xvZ3kgIlBvc3RncmVTUUwiCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9CgogICAgICAgIC8vIEV4dGVybmFsIFN5c3RlbQogICAgICAgIC8vIEFkZCB5b3VyIGV4dGVybmFsIHN5c3RlbSBoZXJlCiAgICAgICAgLy8gRm9yIGV4YW1wbGU6CiAgICAgICAgLy8gZW1haWwgPSBzb2Z0d2FyZVN5c3RlbSAiRW1haWwiIHsKICAgICAgICAgICAgLy9kZXNjcmlwdGlvbiA9ICJUaGUgZW1haWwgc3lzdGVtIgogICAgICAgICAgICAvL3RhZyAiRXh0ZXJuYWwgU3lzdGVtIgogICAgICAgIC8vfQogICAgICAgIAogICAgICAgIGVtYWlsU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIkVtYWlsIFN5c3RlbSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiVGhlIGludGVybmFsIE1pY3Jvc29mdCBFeGNoYW5nZSBlbWFpbCBzeXN0ZW0iCiAgICAgICAgICAgIHRhZyAiRXh0ZXJuYWwgU3lzdGVtIgogICAgICAgIH0KICAgICAgICAKICAgICAgICBtYWluRnJhbWVCYW5raW5nU3lzdGVtID0gc29mdHdhcmVTeXN0ZW0gIk1haW5mcmFtZSBCYW5raW5nIFN5c3RlbSIgewogICAgICAgICAgICBkZXNjcmlwdGlvbiAiU3RvcmVzIGFsbCBvZiB0aGUgY29yZSBiYW5raW5nIGluZm9ybWF0aW9uIGFib3V0IGN1c3RvbWVycywgYWNjb3VudHMsIHRyYW5zYWN0aW9ucywgZXRjIgogICAgICAgICAgICB0YWcgIkV4dGVybmFsIFN5c3RlbSIKICAgICAgICB9CgogICAgICAgIC8vIFJlbGF0aW9uc2hpcHMKICAgICAgICAvLyBBZGQgeW91ciByZWxhdGlvbnNoaXBzIGhlcmUKICAgICAgICBzdXBlcl9hZG1pbiAtPiB3ZWJMb2dpblBhZ2UKICAgICAgICBhZG1pbiAtPiB3ZWJMb2dpblBhZ2UKICAgICAgICB3ZWJMb2dpblBhZ2UgLT4gd2ViRGFzaGJvYXJkUGFnZQogICAgICAgIHdlYkxvZ2luUGFnZSAtPiBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIKICAgICAgICBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgLT4gc2VjdXJpdHlDb21wb25lbnQKICAgICAgICBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgLT4gZW1haWxDb21wb25lbnQKICAgICAgICBzZWN1cml0eUNvbXBvbmVudCAtPiBhdXRoZW50aWNhdGlvblRhYmxlCiAgICAgICAgZW1haWxDb21wb25lbnQgLT4gZW1haWxTeXN0ZW0KICAgICAgICB1c2VyIC0+IG1vYmlsZUxvZ2luUGFnZQogICAgICAgIGRvY3RvciAtPiBtb2JpbGVMb2dpblBhZ2UKICAgICAgICBtb2JpbGVMb2dpblBhZ2UgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZQogICAgICAgIG1vYmlsZUxvZ2luUGFnZSAtPiBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIKICAgICAgICBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgLT4gdmFsaWRhdGlvbkF1dGgKICAgICAgICBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgLT4gc2VuZEVtYWlsCiAgICAgICAgdmFsaWRhdGlvbkF1dGggLT4gYXV0aGVudGljYXRpb25UYWJsZQogICAgICAgIHNlbmRFbWFpbCAtPiBlbWFpbFN5c3RlbQogICAgICAgIHVzZXIgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZQogICAgICAgIAogICAgICAgIG1vYmlsZURhc2hib2FyZFBhZ2UgLT4gbW9iaWxlUHJvZmlsZVBhZ2UKICAgICAgICAKICAgICAgICBtb2JpbGVQcm9maWxlUGFnZSAtPiBtb2JpbGVFZGl0UHJvZmlsZVBhZ2UKICAgICAgICBtb2JpbGVQcm9maWxlUGFnZSAtPiBVc2VyQ29udHJvbGxlcgogICAgICAgIHVzZXJDb250cm9sbGVyIC0+IFVzZXJDb21wb25lbnQKICAgICAgICB1c2VyQ29tcG9uZW50IC0+IHVzZXJUYWJsZQogICAgICAgIAogICAgICAgIG1vYmlsZUVkaXRQcm9maWxlUGFnZSAtPiBtb2JpbGVQcm9maWxlUGFnZQogICAgICAgIG1vYmlsZUVkaXRQcm9maWxlUGFnZSAtPiBVc2VyQ29udHJvbGxlcgogICAgICAgIG1vYmlsZURhc2hib2FyZFBhZ2UgLT4gbW9iaWxlTm90aWZpY2F0aW9uUGFnZQogICAgICAgIG1vYmlsZU5vdGlmaWNhdGlvblBhZ2UgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZQogICAgICAgIG1vYmlsZU5vdGlmaWNhdGlvblBhZ2UgLT4gbm90aWZpY2F0aW9uQ29udHJvbGxlcgogICAgICAgIG5vdGlmaWNhdGlvbkNvbnRyb2xsZXIgLT4gbm90aWZpY2F0aW9uQ29tcG9uZW50CiAgICAgICAgbm90aWZpY2F0aW9uQ29tcG9uZW50IC0+IG5vdGlmaWNhdGlvblRhYmxlCiAgICAgICAgbW9iaWxlRGFzaGJvYXJkUGFnZSAtPiBtb2JpbGVEb2N0b3JMaXN0UGFnZQogICAgICAgIG1vYmlsZURvY3Rvckxpc3RQYWdlIC0+IGRvY3RvckNvbnRyb2xsZXIKICAgICAgICBkb2N0b3JDb250cm9sbGVyIC0+IGRvY3RvckNvbXBvbmVudAogICAgICAgIGRvY3RvckNvbXBvbmVudCAtPiBkb2N0b3JUYWJsZQogICAgICAgIAogICAgICAgIG1vYmlsZURvY3Rvckxpc3RQYWdlIC0+IG1vYmlsZURvY3RvckRldGFpbFBhZ2UKICAgICAgICBtb2JpbGVEb2N0b3JEZXRhaWxQYWdlIC0+IGRvY3RvckNvbnRyb2xsZXIKICAgICAgICAKICAgICAgICBtb2JpbGVEb2N0b3JEZXRhaWxQYWdlIC0+IG1vYmlsZVJlc2VydmF0aW9uUGFnZQogICAgICAgIG1vYmlsZVJlc2VydmF0aW9uUGFnZSAtPiByZXNlcnZhdGlvbkNvbnRyb2xsZXIKICAgICAgICByZXNlcnZhdGlvbkNvbnRyb2xsZXIgLT4gcmVzZXJ2YXRpb25Db21wb25lbnQKICAgICAgICByZXNlcnZhdGlvbkNvbXBvbmVudCAtPiByZXNlcnZhdGlvblRhYmxlCiAgICAgICAgCiAgICAgICAgbW9iaWxlUmVzZXJ2YXRpb25QYWdlIC0+IG1vYmlsZVBheW1lbnRQYWdlCiAgICAgICAgbW9iaWxlUGF5bWVudFBhZ2UgLT4gcGF5bWVudENvbnRyb2xsZXIKICAgICAgICBwYXltZW50Q29udHJvbGxlciAtPiBtYWluZnJhbWVCYW5raW5nU3lzdGVtRmFjYWRlCiAgICAgICAgbWFpbmZyYW1lQmFua2luZ1N5c3RlbUZhY2FkZSAtPiBtYWluRnJhbWVCYW5raW5nU3lzdGVtCiAgICAgICAgCiAgICAgICAgbW9iaWxlUGF5bWVudFBhZ2UgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZQogICAgfQoKICAgIHZpZXdzIHsKICAgICAgICAvLyBBZGQgeW91ciB2aWV3cyBoZXJlCiAgICAgICAgZHluYW1pYyB3ZWIgewogICAgICAgICAgICB0aXRsZSAiV2ViIExvZ2luIgogICAgICAgIAogICAgICAgICAgICBzdXBlcl9hZG1pbiAtPiB3ZWJMb2dpblBhZ2UgIlZpc2l0cyBwYWdlIgogICAgICAgICAgICBhZG1pbiAtPiB3ZWJMb2dpblBhZ2UgIlZpc2l0cyBwYWdlIgogICAgICAgICAgICB3ZWJMb2dpblBhZ2UgLT4gd2ViRGFzaGJvYXJkUGFnZSAiQ2xpY2tzIGxvZ2luIGJ1dHRvbiIKICAgICAgICAgICAgd2ViTG9naW5QYWdlIC0+IGF1dGhlbnRpY2F0aW9uQ29udHJvbGxlciAiR2V0IGRhdGEiCiAgICAgICAgICAgIGF1dGhlbnRpY2F0aW9uQ29udHJvbGxlciAtPiBzZWN1cml0eUNvbXBvbmVudCAiVXNlcyIKICAgICAgICAgICAgYXV0aGVudGljYXRpb25Db250cm9sbGVyIC0+IGVtYWlsQ29tcG9uZW50ICJVc2VzIgogICAgICAgICAgICBzZWN1cml0eUNvbXBvbmVudCAtPiBhdXRoZW50aWNhdGlvblRhYmxlICJHZXQgZGF0YSIKICAgICAgICAgICAgZW1haWxDb21wb25lbnQgLT4gZW1haWxTeXN0ZW0gIlNlbmRzIGVtYWlsIHVzaW5nIgogICAgICAgIAogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQogICAgICAgIGR5bmFtaWMgbW9iaWxlIHsKICAgICAgICAgICAgdGl0bGUgIk1vYmlsZSBMb2dpbiIKICAgICAgICAKICAgICAgICAgICAgdXNlciAtPiBtb2JpbGVMb2dpblBhZ2UgIlZpc2l0cyBwYWdlIgogICAgICAgICAgICBkb2N0b3IgLT4gbW9iaWxlTG9naW5QYWdlICJWaXNpdHMgcGFnZSIKICAgICAgICAgICAgbW9iaWxlTG9naW5QYWdlIC0+IG1vYmlsZURhc2hib2FyZFBhZ2UgIkNsaWNrcyBsb2dpbiBidXR0b24iCiAgICAgICAgICAgIG1vYmlsZUxvZ2luUGFnZSAtPiBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgIkdldCBkYXRhIgogICAgICAgICAgICBhdXRoZW50aWNhdGlvbkNvbnRyb2xsZXIgLT4gdmFsaWRhdGlvbkF1dGggIlVzZXMiCiAgICAgICAgICAgIGF1dGhlbnRpY2F0aW9uQ29udHJvbGxlciAtPiBzZW5kRW1haWwgIlVzZXMiCiAgICAgICAgICAgIHZhbGlkYXRpb25BdXRoIC0+IGF1dGhlbnRpY2F0aW9uVGFibGUgIkdldCBkYXRhIgogICAgICAgICAgICBzZW5kRW1haWwgLT4gZW1haWxTeXN0ZW0gIlNlbmRzIGVtYWlsIHVzaW5nIgogICAgICAgIAogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQogICAgICAgIGR5bmFtaWMgbW9iaWxlIHsKICAgICAgICAgICAgdGl0bGUgIkVkaXQgUHJvZmlsZSIKICAgICAgICAKICAgICAgICAgICAgdXNlciAtPiBtb2JpbGVEYXNoYm9hcmRQYWdlICJWaXNpdHMgcGFnZSIKICAgICAgICAKICAgICAgICAgICAgbW9iaWxlRGFzaGJvYXJkUGFnZSAtPiBtb2JpbGVQcm9maWxlUGFnZSAiQ2xpY2tzIHByb2ZpbGUgbWVudSIKICAgICAgICAKICAgICAgICAgICAgbW9iaWxlUHJvZmlsZVBhZ2UgLT4gbW9iaWxlRWRpdFByb2ZpbGVQYWdlICJDbGlja3MgZWRpdCBidXR0b24iCiAgICAgICAgICAgIG1vYmlsZVByb2ZpbGVQYWdlIC0+IFVzZXJDb250cm9sbGVyICJHZXQgZGF0YSIKICAgICAgICAgICAgVXNlckNvbnRyb2xsZXIgLT4gVXNlckNvbXBvbmVudCAiVXNlcyIKICAgICAgICAgICAgVXNlckNvbXBvbmVudCAtPiB1c2VyVGFibGUgIkdldCBkYXRhIgogICAgICAgIAogICAgICAgICAgICBtb2JpbGVFZGl0UHJvZmlsZVBhZ2UgLT4gbW9iaWxlUHJvZmlsZVBhZ2UgIkNsaWNrcyBzYXZlIGJ1dHRvbiIKICAgICAgICAgICAgbW9iaWxlRWRpdFByb2ZpbGVQYWdlIC0+IFVzZXJDb250cm9sbGVyICJTZXQgZGF0YSIKICAgICAgICAgICAgVXNlckNvbnRyb2xsZXIgLT4gVXNlckNvbXBvbmVudCAiVXNlcyIKICAgICAgICAgICAgVXNlckNvbXBvbmVudCAtPiB1c2VyVGFibGUgIlNldCBkYXRhIgogICAgICAgIAogICAgICAgICAgICBhdXRvbGF5b3V0IGxyCiAgICAgICAgfQogICAgICAgIGR5bmFtaWMgbW9iaWxlIHsKICAgICAgICAgICAgdGl0bGUgIk5vdGlmaWNhdGlvbiIKICAgICAgICAKICAgICAgICAgICAgdXNlciAtPiBtb2JpbGVEYXNoYm9hcmRQYWdlICJWaXNpdHMgcGFnZSIKICAgICAgICAKICAgICAgICAgICAgbW9iaWxlRGFzaGJvYXJkUGFnZSAtPiBtb2JpbGVOb3RpZmljYXRpb25QYWdlICJDbGlja3Mgbm90aWZpY2F0aW9uIG1lbnUiCiAgICAgICAgICAgIG1vYmlsZU5vdGlmaWNhdGlvblBhZ2UgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZSAiQ2xpY2tzIGJhY2sgYnV0dG9uIgogICAgICAgICAgICBtb2JpbGVOb3RpZmljYXRpb25QYWdlIC0+IG5vdGlmaWNhdGlvbkNvbnRyb2xsZXIgIkdldCBub3RpZmljYXRpb24iCiAgICAgICAgICAgIG5vdGlmaWNhdGlvbkNvbnRyb2xsZXIgLT4gbm90aWZpY2F0aW9uQ29tcG9uZW50ICJVc2VzIgogICAgICAgICAgICBub3RpZmljYXRpb25Db21wb25lbnQgLT4gbm90aWZpY2F0aW9uVGFibGUgIkdldCBub3RpZmljYXRpb24iCiAgICAgICAgCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CiAgICAgICAgZHluYW1pYyBtb2JpbGUgewogICAgICAgICAgICB0aXRsZSAiUmVzZXJ2YXRpb24iCiAgICAgICAgCiAgICAgICAgICAgIHVzZXIgLT4gbW9iaWxlRGFzaGJvYXJkUGFnZSAiVmlzaXRzIHBhZ2UiCiAgICAgICAgCiAgICAgICAgICAgIG1vYmlsZURhc2hib2FyZFBhZ2UgLT4gbW9iaWxlRG9jdG9yTGlzdFBhZ2UgIkNsaWNrcyBjb25zdWx0YXRpb24gbWVudSIKICAgICAgICAgICAgbW9iaWxlRG9jdG9yTGlzdFBhZ2UgLT4gZG9jdG9yQ29udHJvbGxlciAiR2V0IGRvY3RvciBsaXN0IgogICAgICAgICAgICBkb2N0b3JDb250cm9sbGVyIC0+IGRvY3RvckNvbXBvbmVudCAiVXNpbmciCiAgICAgICAgICAgIGRvY3RvckNvbXBvbmVudCAtPiBkb2N0b3JUYWJsZSAiR2V0IGRvY3RvciBsaXN0IgogICAgICAgIAogICAgICAgICAgICBtb2JpbGVEb2N0b3JMaXN0UGFnZSAtPiBtb2JpbGVEb2N0b3JEZXRhaWxQYWdlICJDbGlja3MgYW4gaXRlbSBvZiBkb2N0b3IgbGlzdCIKICAgICAgICAgICAgbW9iaWxlRG9jdG9yRGV0YWlsUGFnZSAtPiBkb2N0b3JDb250cm9sbGVyICJHZXQgZG9jdG9yIGRhdGEiCiAgICAgICAgICAgIGRvY3RvckNvbnRyb2xsZXIgLT4gZG9jdG9yQ29tcG9uZW50ICJVc2luZyIKICAgICAgICAgICAgZG9jdG9yQ29tcG9uZW50IC0+IGRvY3RvclRhYmxlICJHZXQgZG9jdG9yIGRhdGEiCiAgICAgICAgCiAgICAgICAgICAgIG1vYmlsZURvY3RvckRldGFpbFBhZ2UgLT4gbW9iaWxlUmVzZXJ2YXRpb25QYWdlICJDbGlja3MgcmVzZXJ2YXRpb24gYnV0dG9uIgogICAgICAgICAgICBtb2JpbGVSZXNlcnZhdGlvblBhZ2UgLT4gcmVzZXJ2YXRpb25Db250cm9sbGVyICJTZXQgcmVzZXJ2YXRpb24iCiAgICAgICAgICAgIHJlc2VydmF0aW9uQ29udHJvbGxlciAtPiByZXNlcnZhdGlvbkNvbXBvbmVudCAiVXNpbmciCiAgICAgICAgICAgIHJlc2VydmF0aW9uQ29tcG9uZW50IC0+IHJlc2VydmF0aW9uVGFibGUgIlNldCByZXNlcnZhdGlvbiIKICAgICAgICAKICAgICAgICAgICAgbW9iaWxlUmVzZXJ2YXRpb25QYWdlIC0+IG1vYmlsZVBheW1lbnRQYWdlICJDbGlja3MgcGF5bWVudCBidXR0b24iCiAgICAgICAgICAgIG1vYmlsZVBheW1lbnRQYWdlIC0+IHBheW1lbnRDb250cm9sbGVyICJTZXQgcGF5bWVudCIKICAgICAgICAgICAgcGF5bWVudENvbnRyb2xsZXIgLT4gbWFpbmZyYW1lQmFua2luZ1N5c3RlbUZhY2FkZSAiVXNpbmciCiAgICAgICAgICAgIG1haW5mcmFtZUJhbmtpbmdTeXN0ZW1GYWNhZGUgLT4gbWFpbkZyYW1lQmFua2luZ1N5c3RlbSAiU2V0IHBheW1lbnQiCiAgICAgICAgCiAgICAgICAgICAgIG1vYmlsZVBheW1lbnRQYWdlIC0+IG1vYmlsZURhc2hib2FyZFBhZ2UgIkNsaWNrcyBwYXltZW50IGJ1dHRvbiIKICAgICAgICAKICAgICAgICAgICAgYXV0b2xheW91dCBscgogICAgICAgIH0KCiAgICAgICAgc3lzdGVtQ29udGV4dCBtYWluU3lzdGVtIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIGNvbnRhaW5lciBtYWluU3lzdGVtIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgbHIKICAgICAgICB9CgogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIkVsZW1lbnQiIHsKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzA1NTI3ZAogICAgICAgICAgICAgICAgc2hhcGUgcGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMwNjYyOTYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb250YWluZXIiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzA3NzNhZgogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIkNvbXBvbmVudCIgewogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjODViYmYwCiAgICAgICAgICAgICAgICBjb2xvciAjMDAwMDAwCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRXh0ZXJuYWwgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM5OTk5OTkKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJEYXRhYmFzZSIgewogICAgICAgICAgICAgICAgc2hhcGUgY3lsaW5kZXIKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgdGhlbWUgZGVmYXVsdAogICAgfQp9"
+  },
+  "views" : {
+    "configuration" : {
+      "branding" : { },
+      "lastSavedView" : "Dynamic-005",
+      "metadataSymbols" : "SquareBrackets",
+      "styles" : {
+        "elements" : [ {
+          "color" : "#ffffff",
+          "tag" : "Element"
+        }, {
+          "background" : "#05527d",
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "background" : "#066296",
+          "tag" : "Software System"
+        }, {
+          "background" : "#0773af",
+          "tag" : "Container"
+        }, {
+          "background" : "#85bbf0",
+          "color" : "#000000",
+          "tag" : "Component"
+        }, {
+          "background" : "#999999",
+          "tag" : "External System"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        } ]
+      },
+      "terminology" : { },
+      "themes" : [ "https://static.structurizr.com/themes/default/theme.json" ]
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "19",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "35",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "41",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "42",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "order" : 7,
+      "relationships" : [ {
+        "id" : "126"
+      }, {
+        "id" : "44"
+      }, {
+        "id" : "47"
+      }, {
+        "id" : "53"
+      }, {
+        "id" : "59"
+      }, {
+        "id" : "61"
+      }, {
+        "id" : "64"
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "73"
+      } ],
+      "softwareSystemId" : "5"
+    } ],
+    "dynamicViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elementId" : "16",
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "18",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "20",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "21",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "22",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "36",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "41",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-001",
+      "order" : 1,
+      "relationships" : [ {
+        "description" : "Visits page",
+        "id" : "43",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Visits page",
+        "id" : "46",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Clicks login button",
+        "id" : "49",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Get data",
+        "id" : "50",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "54",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "55",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Get data",
+        "id" : "56",
+        "order" : "7",
+        "response" : false
+      }, {
+        "description" : "Sends email using",
+        "id" : "60",
+        "order" : "8",
+        "response" : false
+      } ],
+      "title" : "Web Login"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 2362,
+        "width" : 3820
+      },
+      "elementId" : "6",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 199,
+        "y" : 165
+      }, {
+        "id" : "4",
+        "x" : 199,
+        "y" : 865
+      }, {
+        "id" : "7",
+        "x" : 899,
+        "y" : 565
+      }, {
+        "id" : "8",
+        "x" : 1649,
+        "y" : 565
+      }, {
+        "id" : "20",
+        "x" : 1649,
+        "y" : 1165
+      }, {
+        "id" : "33",
+        "x" : 2399,
+        "y" : 1136
+      }, {
+        "id" : "34",
+        "x" : 2399,
+        "y" : 1736
+      }, {
+        "id" : "36",
+        "x" : 3149,
+        "y" : 1136
+      }, {
+        "id" : "41",
+        "x" : 3149,
+        "y" : 1736
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-002",
+      "order" : 2,
+      "relationships" : [ {
+        "description" : "Visits page",
+        "id" : "63",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Visits page",
+        "id" : "66",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Clicks login button",
+        "id" : "69",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Get data",
+        "id" : "70",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "74",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "75",
+        "order" : "6",
+        "response" : false
+      }, {
+        "description" : "Get data",
+        "id" : "76",
+        "order" : "7",
+        "response" : false
+      }, {
+        "description" : "Sends email using",
+        "id" : "78",
+        "order" : "8",
+        "response" : false
+      } ],
+      "title" : "Mobile Login"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 1141,
+        "width" : 5320
+      },
+      "elementId" : "6",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 199,
+        "y" : 165
+      }, {
+        "id" : "8",
+        "x" : 899,
+        "y" : 215
+      }, {
+        "id" : "10",
+        "x" : 1649,
+        "y" : 215
+      }, {
+        "id" : "11",
+        "x" : 2399,
+        "y" : 215
+      }, {
+        "id" : "23",
+        "x" : 3149,
+        "y" : 515
+      }, {
+        "id" : "24",
+        "x" : 3899,
+        "y" : 515
+      }, {
+        "id" : "37",
+        "x" : 4649,
+        "y" : 515
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-003",
+      "order" : 3,
+      "relationships" : [ {
+        "description" : "Visits page",
+        "id" : "79",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Clicks profile menu",
+        "id" : "80",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Clicks edit button",
+        "id" : "81",
+        "order" : "3",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2249,
+          "y" : 515
+        } ]
+      }, {
+        "description" : "Get data",
+        "id" : "82",
+        "order" : "4",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2399,
+          "y" : 665
+        } ]
+      }, {
+        "description" : "Uses",
+        "id" : "85",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 3749,
+          "y" : 815
+        } ]
+      }, {
+        "description" : "Get data",
+        "id" : "86",
+        "order" : "6",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 4499,
+          "y" : 815
+        } ]
+      }, {
+        "description" : "Clicks save button",
+        "id" : "89",
+        "order" : "7",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2249,
+          "y" : 215
+        } ]
+      }, {
+        "description" : "Set data",
+        "id" : "90",
+        "order" : "8",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "85",
+        "order" : "9",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 3749,
+          "y" : 515
+        } ]
+      }, {
+        "description" : "Set data",
+        "id" : "86",
+        "order" : "10",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 4499,
+          "y" : 515
+        } ]
+      } ],
+      "title" : "Edit Profile"
+    }, {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elementId" : "6",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "25",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "26",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "38",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-004",
+      "order" : 4,
+      "relationships" : [ {
+        "description" : "Visits page",
+        "id" : "79",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Clicks notification menu",
+        "id" : "92",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Clicks back button",
+        "id" : "93",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Get notification",
+        "id" : "94",
+        "order" : "4",
+        "response" : false
+      }, {
+        "description" : "Uses",
+        "id" : "97",
+        "order" : "5",
+        "response" : false
+      }, {
+        "description" : "Get notification",
+        "id" : "98",
+        "order" : "6",
+        "response" : false
+      } ],
+      "title" : "Notification"
+    }, {
+      "automaticLayout" : {
+        "applied" : true,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "dimensions" : {
+        "height" : 3312,
+        "width" : 6140
+      },
+      "elementId" : "6",
+      "elements" : [ {
+        "id" : "3",
+        "x" : 1745,
+        "y" : 165
+      }, {
+        "id" : "8",
+        "x" : 2470,
+        "y" : 1174
+      }, {
+        "id" : "9",
+        "x" : 3220,
+        "y" : 1174
+      }, {
+        "id" : "13",
+        "x" : 220,
+        "y" : 1174
+      }, {
+        "id" : "14",
+        "x" : 970,
+        "y" : 1174
+      }, {
+        "id" : "15",
+        "x" : 1720,
+        "y" : 1174
+      }, {
+        "id" : "27",
+        "x" : 3970,
+        "y" : 1486
+      }, {
+        "id" : "28",
+        "x" : 4720,
+        "y" : 1486
+      }, {
+        "id" : "29",
+        "x" : 3970,
+        "y" : 2686
+      }, {
+        "id" : "30",
+        "x" : 4720,
+        "y" : 2686
+      }, {
+        "id" : "31",
+        "x" : 3970,
+        "y" : 2086
+      }, {
+        "id" : "32",
+        "x" : 4720,
+        "y" : 2086
+      }, {
+        "id" : "39",
+        "x" : 5470,
+        "y" : 1486
+      }, {
+        "id" : "40",
+        "x" : 5470,
+        "y" : 2086
+      }, {
+        "id" : "42",
+        "x" : 5470,
+        "y" : 2686
+      } ],
+      "externalBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Dynamic-005",
+      "order" : 5,
+      "relationships" : [ {
+        "description" : "Visits page",
+        "id" : "79",
+        "order" : "1",
+        "response" : false
+      }, {
+        "description" : "Clicks consultation menu",
+        "id" : "101",
+        "order" : "2",
+        "response" : false
+      }, {
+        "description" : "Get doctor list",
+        "id" : "102",
+        "order" : "3",
+        "response" : false
+      }, {
+        "description" : "Using",
+        "id" : "105",
+        "order" : "4",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 4570,
+          "y" : 1786
+        } ]
+      }, {
+        "description" : "Get doctor list",
+        "id" : "106",
+        "order" : "5",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 5320,
+          "y" : 1786
+        } ]
+      }, {
+        "description" : "Clicks an item of doctor list",
+        "id" : "109",
+        "order" : "6",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2920,
+          "y" : 1024
+        }, {
+          "x" : 970,
+          "y" : 1024
+        } ]
+      }, {
+        "description" : "Get doctor data",
+        "id" : "110",
+        "order" : "7",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1941,
+          "y" : 2536
+        }, {
+          "x" : 2699,
+          "y" : 2536
+        } ]
+      }, {
+        "description" : "Using",
+        "id" : "105",
+        "order" : "8",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 4570,
+          "y" : 1486
+        } ]
+      }, {
+        "description" : "Get doctor data",
+        "id" : "106",
+        "order" : "9",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 5320,
+          "y" : 1486
+        } ]
+      }, {
+        "description" : "Clicks reservation button",
+        "id" : "112",
+        "order" : "10",
+        "response" : false
+      }, {
+        "description" : "Set reservation",
+        "id" : "113",
+        "order" : "11",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 1720,
+          "y" : 1624
+        } ]
+      }, {
+        "description" : "Using",
+        "id" : "116",
+        "order" : "12",
+        "response" : false
+      }, {
+        "description" : "Set reservation",
+        "id" : "117",
+        "order" : "13",
+        "response" : false
+      }, {
+        "description" : "Clicks payment button",
+        "id" : "120",
+        "order" : "14",
+        "response" : false
+      }, {
+        "description" : "Set payment",
+        "id" : "121",
+        "order" : "15",
+        "response" : false,
+        "vertices" : [ {
+          "x" : 2470,
+          "y" : 1624
+        } ]
+      }, {
+        "description" : "Using",
+        "id" : "124",
+        "order" : "16",
+        "response" : false
+      }, {
+        "description" : "Set payment",
+        "id" : "125",
+        "order" : "17",
+        "response" : false
+      }, {
+        "description" : "Clicks payment button",
+        "id" : "128",
+        "order" : "18",
+        "response" : false
+      } ],
+      "title" : "Reservation"
+    } ],
+    "systemContextViews" : [ {
+      "automaticLayout" : {
+        "applied" : false,
+        "edgeSeparation" : 0,
+        "implementation" : "Graphviz",
+        "nodeSeparation" : 300,
+        "rankDirection" : "LeftRight",
+        "rankSeparation" : 300,
+        "vertices" : false
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "41",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "42",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "order" : 6,
+      "relationships" : [ {
+        "id" : "127"
+      }, {
+        "id" : "45"
+      }, {
+        "id" : "48"
+      }, {
+        "id" : "62"
+      }, {
+        "id" : "65"
+      }, {
+        "id" : "68"
+      } ],
+      "softwareSystemId" : "5"
+    } ]
+  }
+}
