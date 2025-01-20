@@ -1,6 +1,6 @@
 // Add your views here
-!include web_login/view.dsl
-!include mobile_login/view.dsl
-!include edit_profile/view.dsl
-!include notification/view.dsl
-!include reservation/view.dsl
+!include web/login/view.dsl
+!include mobile/register/view.dsl
+!include mobile/edit_profile/view.dsl
+!include mobile/notification/view.dsl
+!include mobile/reservation/view.dsl

@@ -1,5 +1,5 @@
 dynamic mobile {
-    title "Edit Profile"
+    title "Mobile Edit Profile"
 
     user -> mobileDashboardPage "Visits page"
 
@@ -7,13 +7,13 @@ dynamic mobile {
 
     mobileProfilePage -> mobileEditProfilePage "Clicks edit button"
     mobileProfilePage -> UserController "Get data"
-    UserController -> UserComponent "Uses"
-    UserComponent -> userTable "Get data"
+    UserController -> getProfileEndpoint "Uses"
+    getProfileEndpoint -> userTable "Get data"
 
     mobileEditProfilePage -> mobileProfilePage "Clicks save button"
     mobileEditProfilePage -> UserController "Set data"
-    UserController -> UserComponent "Uses"
-    UserComponent -> userTable "Set data"
+    UserController -> editProfileEndpoint "Uses"
+    editProfileEndpoint -> userTable "Set data"
 
     autolayout lr
 }

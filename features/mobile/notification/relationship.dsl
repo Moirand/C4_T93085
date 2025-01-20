@@ -1,5 +1,5 @@
 mobileDashboardPage -> mobileNotificationPage
 mobileNotificationPage -> mobileDashboardPage
 mobileNotificationPage -> notificationController
-notificationController -> notificationComponent
-notificationComponent -> notificationTable
+notificationController -> getNotificationEndpoint
+getNotificationEndpoint -> notificationTable

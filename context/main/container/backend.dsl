@@ -32,8 +32,8 @@ backend = container "Backend" {
         technology "Golang Raiden"
     }
 
-    notificationComponent = component "Notification Component" {
-        description "Provides functionality of notification."
+    notificationEndpoint = component "Notification RESTful Endpoint" {
+        description "Handle /api/v1/notification."
         technology "Golang Raiden"
     }
 
@@ -42,8 +42,13 @@ backend = container "Backend" {
         technology "Golang Raiden"
     }
 
-    doctorComponent = component "Doctor Component" {
-        description "Component of Doctor."
+    doctorListEndpoint = component "Doctor List RESTful Endpoint" {
+        description "Handle /api/v1/doctor-list."
+        technology "Golang Raiden"
+    }
+
+    doctorDataEndpoint = component "Doctor Data RESTful Endpoint" {
+        description "Handle /api/v1/doctor-data."
         technology "Golang Raiden"
     }
 
@@ -52,8 +57,8 @@ backend = container "Backend" {
         technology "Golang Raiden"
     }
 
-    reservationComponent = component "Reservation Component" {
-        description "Component of reservation."
+    reservationEndpoint = component "Reservation RESTful endpoint" {
+        description "Handle /api/v1/reservation."
         technology "Golang Raiden"
     }
 
@@ -67,13 +72,43 @@ backend = container "Backend" {
         technology "Golang Raiden"
     }
 
-    validationAuth = component "Validation Auth RESTful endpoint" {
+    validationAuthEndpoint = component "Validation Auth RESTful endpoint" {
         description "Handle /api/v1/validation-auth"
         technology "Golang Raiden"
     }
 
-    sendEmail = component "Send Email RESTful endpoint" {
-        description "Handle /api/v1/send-email"
+    sendOtpEndpoint = component "Send Otp RESTful endpoint" {
+        description "Handle /api/v1/send-otp"
+        technology "Golang Raiden"
+    }
+
+    editProfileEndpoint = component "Edit Profile RESTful endpoint" {
+        description "Handle /api/v1/edit-profile"
+        technology "Golang Raiden"
+    }
+
+    getProfileEndpoint = component "Get Profile RESTful endpoint" {
+        description "Handle /api/v1/get-profile"
+        technology "Golang Raiden"
+    }
+
+    getNotificationEndpoint = component "Get Notification RESTful endpoint" {
+        description "Handle /api/v1/get-notification"
+        technology "Golang Raiden"
+    }
+
+    verifyOtpEndpoint = component "Verify OTP RESTful endpoint" {
+        description "Handle /api/v1/verify-otp"
+        technology "Golang Raiden"
+    }
+
+    otpController = component "Otp Controller" {
+        description "Provide functionality related to otp"
+        technology "Golang Raiden"
+    }
+
+    registerEndpoint = component "Register RESTful endpoint" {
+        description "Handle /api/v1/register"
         technology "Golang Raiden"
     }
 }

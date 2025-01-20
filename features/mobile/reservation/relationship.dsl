@@ -1,15 +1,17 @@
 mobileDashboardPage -> mobileDoctorListPage
 mobileDoctorListPage -> doctorController
-doctorController -> doctorComponent
-doctorComponent -> doctorTable
+doctorController -> doctorDataEndpoint
+doctorDataEndpoint -> doctorTable
 
 mobileDoctorListPage -> mobileDoctorDetailPage
 mobileDoctorDetailPage -> doctorController
+doctorController -> doctorListEndpoint
+doctorListEndpoint -> doctorTable
 
 mobileDoctorDetailPage -> mobileReservationPage
 mobileReservationPage -> reservationController
-reservationController -> reservationComponent
-reservationComponent -> reservationTable
+reservationController -> reservationEndpoint
+reservationEndpoint -> reservationTable
 
 mobileReservationPage -> mobilePaymentPage
 mobilePaymentPage -> paymentController

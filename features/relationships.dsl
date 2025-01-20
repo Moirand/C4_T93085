@@ -1,6 +1,6 @@
 // Add your relationships here
-!include web_login/relationship.dsl
-!include mobile_login/relationship.dsl
-!include edit_profile/relationship.dsl
-!include notification/relationship.dsl
-!include reservation/relationship.dsl
+!include web/login/relationship.dsl
+!include mobile/register/relationship.dsl
+!include mobile/edit_profile/relationship.dsl
+!include mobile/notification/relationship.dsl
+!include mobile/reservation/relationship.dsl

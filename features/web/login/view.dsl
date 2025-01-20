@@ -5,10 +5,8 @@ dynamic web {
     admin -> webLoginPage "Visits page"
     webLoginPage -> webDashboardPage "Clicks login button"
     webLoginPage -> authenticationController "Get data"
-    authenticationController -> securityComponent "Uses"
-    authenticationController -> emailComponent "Uses"
-    securityComponent -> authenticationTable "Get data"
-    emailComponent -> emailSystem "Sends email using"
+    authenticationController -> validationAuthEndpoint "Uses"
+    validationAuthEndpoint -> authenticationTable "Get data"
 
     autolayout lr
 }

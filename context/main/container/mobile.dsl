@@ -41,4 +41,16 @@ mobile = container "Mobile App" {
     mobilePaymentPage = component "Payment Page" {
         technology "Dart & Flutter"
     }
+
+    mobileSuccessRegisterPage = component "Success Register Page" {
+        technology "Dart & Flutter"
+    }
+
+    mobileOtpPage = component "OTP Page" {
+        technology "Dart & Flutter"
+    }
+
+    mobileRegisterPage = component "Register Page" {
+        technology "Dart & Flutter"
+    }
 }

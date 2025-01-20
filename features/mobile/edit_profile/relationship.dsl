@@ -4,8 +4,11 @@ mobileDashboardPage -> mobileProfilePage
 
 mobileProfilePage -> mobileEditProfilePage
 mobileProfilePage -> UserController
-userController -> UserComponent
-userComponent -> userTable
+userController -> getProfileEndpoint
+getProfileEndpoint -> userTable
 
 mobileEditProfilePage -> mobileProfilePage
 mobileEditProfilePage -> UserController
+
+userController -> editProfileEndpoint
+editProfileEndpoint -> userTable
