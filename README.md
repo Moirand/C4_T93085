@@ -14,37 +14,38 @@ This is the C4 Diagrams for Medpoint System, a platform that allows users to mak
 
 # Project Structures
     
-```bash
-├── Makefile
+```bash├── Makefile
 ├── README.md
 ├── context
-│   ├── external
-│   │   └── context.dsl
-│   └── main
-│       ├── container
-│       │   ├── backend.dsl
-│       │   ├── database.dsl
-│       │   ├── mobile.dsl
-│       │   └── web.dsl
-│       └── context.dsl
+│   ├── external
+│   │   └── context.dsl
+│   └── main
+│       ├── container
+│       │   ├── backend.dsl
+│       │   ├── database.dsl
+│       │   ├── mobile.dsl
+│       │   └── web.dsl
+│       └── context.dsl
 ├── features
-│   ├── edit_profile
-│   │   ├── relationship.dsl
-│   │   └── view.dsl
-│   ├── mobile_login
-│   │   ├── relationship.dsl
-│   │   └── view.dsl
-│   ├── notification
-│   │   ├── relationship.dsl
-│   │   └── view.dsl
-│   ├── relationships.dsl
-│   ├── reservation
-│   │   ├── relationship.dsl
-│   │   └── view.dsl
-│   ├── views.dsl
-│   └── web_login
-│       ├── relationship.dsl
-│       └── view.dsl
+│   ├── mobile
+│   │   ├── edit_profile
+│   │   │   ├── relationship.dsl
+│   │   │   └── view.dsl
+│   │   ├── notification
+│   │   │   ├── relationship.dsl
+│   │   │   └── view.dsl
+│   │   ├── register
+│   │   │   ├── relationship.dsl
+│   │   │   └── view.dsl
+│   │   └── reservation
+│   │       ├── relationship.dsl
+│   │       └── view.dsl
+│   ├── relationships.dsl
+│   ├── views.dsl
+│   └── web
+│       └── login
+│           ├── relationship.dsl
+│           └── view.dsl
 ├── people.dsl
 ├── workspace.dsl
 └── workspace.json
